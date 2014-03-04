@@ -7,6 +7,7 @@ var fs = require("fs")
       "zprofile",
       "exports",
       "functions",
+      "gitconfig",
       "front"
     ]
   , brewSymlink
@@ -25,9 +26,12 @@ if(fs.existsSync(brewSymlink)) fs.unlinkSync(brewSymlink)
 fs.symlinkSync(here("Brewfile"), brewSymlink)
 console.log("✔︎ " + "Brewfile")
 
-require("./npm").forEach(function(item){
-  childProcess.execFile("npm", ["install", "-g", item], function(err, stdout, stderr){
-    console.log(stdout)
+if(process.argv.indexOf("--npm") != -1){
+  require("./npm").forEach(function(item){
+    childProcess.execFile("npm", ["install", "-g", "--skip-installed", item], function(err, stdout, stderr){
+      console.log(stdout)
+    })
   })
-})
+}
+
 
