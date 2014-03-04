@@ -28,7 +28,7 @@ console.log("✔︎ " + "Brewfile")
 
 if(process.argv.indexOf("--npm") != -1){
   require("./npm").forEach(function(item){
-    childProcess.execFile("npm", ["install", "-g", "--skip-installed", item], function(err, stdout, stderr){
+    childProcess.execFile("npm", ["install", "-g", item], function(err, stdout, stderr){
       console.log(stdout)
     })
   })
