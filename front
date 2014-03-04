@@ -3,3 +3,12 @@
 cvr () {
   browserify -t coverify test/**.js | testling | coverify
 }
+
+tst () {
+  testling
+}
+
+mktst () {
+  testling --html > test.html
+  bloodyserver
+}
