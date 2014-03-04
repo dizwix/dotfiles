@@ -1,0 +1,19 @@
+{
+  "name": "dotfiles",
+  "version": "0.0.0",
+  "description": "",
+  "main": "install.js",
+  "scripts": {
+    "start" : "node install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bloodyowl/dotfiles.git"
+  },
+  "author": "bloodyowl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloodyowl/dotfiles/issues"
+  },
+  "homepage": "https://github.com/bloodyowl/dotfiles"
+}

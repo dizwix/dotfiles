@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cvr () {
+  browserify -t coverify test/**.js | testling | coverify
+}

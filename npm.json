@@ -1,0 +1,12 @@
+[
+  "testling",
+  "tape",
+  "stylus",
+  "jade",
+  "gulp",
+  "grunt-cli",
+  "express",
+  "coverify",
+  "browserify",
+  "bloody-testserver"
+]

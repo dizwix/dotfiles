@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export EDITOR="vim"
+
+export LANG="en_UK"
+export LC_ALL="en_UK.UTF-8"
