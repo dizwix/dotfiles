@@ -12,3 +12,11 @@ mktst () {
   testling --html > test.html
   bloodyserver
 }
+
+nid () {
+  npm install $1 --save-dev
+}
+
+ni () {
+  npm install $1 --save
+}
