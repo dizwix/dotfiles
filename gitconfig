@@ -30,9 +30,6 @@
 [merge]
   tool = Kaleidoscope
 
-[github]
-  user = mlbli
-
 [push]
   default = simple
 
