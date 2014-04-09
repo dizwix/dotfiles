@@ -9,7 +9,7 @@
   ui = true
 
 [core]
-  editor = choc -w
+  editor = atom -w
 
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
@@ -42,3 +42,5 @@
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
+[pull]
+	rebase = true
